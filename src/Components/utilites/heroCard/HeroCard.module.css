@@ -1,0 +1,15 @@
+.mainContainer {
+    background-color: white;
+}
+.cardContainer {
+   border: 1px solid #eee;
+}
+.mainImg {
+    width: 70%;
+   
+    height: 100px;
+     object-fit: cover;
+}
+.linkContainer {
+    width: fit-content;
+}

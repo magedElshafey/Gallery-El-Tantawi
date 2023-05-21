@@ -6,7 +6,7 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 import MoreBtn from "../MoreBtn/MoreBtn";
 import { Link } from "react-router-dom";
 
-const ProductSlider = ({ title, data }) => {
+const ProductSlider = ({ title, data, path }) => {
   const swiperOptions = {
     loop: true,
     centeredSlides: false,
@@ -42,7 +42,7 @@ const ProductSlider = ({ title, data }) => {
     <div className="py-5 container">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <p className="fw-bold fs-4">{title}</p>
-        <MoreBtn path="/best" />
+        <MoreBtn path={path} />
       </div>
       <div className="row">
         <Swiper

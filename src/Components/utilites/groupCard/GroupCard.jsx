@@ -6,11 +6,11 @@ const GroupCard = ({ data, title, path }) => {
   return (
     <div className={`p-3 ${style.mainCard}`}>
       <p className="fw-bold mb-3">{title}</p>
-      <div className="row gap-3">
+      <div className="row">
         {data.map((item, index) => (
-          <div key={index} className="col-5">
+          <div key={index} className="col-6">
             <img alt="product/img" src={item.img} className={style.mainImg} />
-            <Link to={`${path}/${item.id}`} className="text-black">
+            <Link to={`/product/${item.id}`} className="text-black">
               <p className="fw-bold fs-6 text-center">{item.name}</p>
             </Link>
           </div>

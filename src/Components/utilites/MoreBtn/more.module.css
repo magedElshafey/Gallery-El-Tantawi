@@ -1,0 +1,26 @@
+.btn {
+    padding: 7px 15px;
+    height: 40px;
+    background-color: var(--moreBtn);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.link {
+    color: white !important;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: var(--red) !important;
+}

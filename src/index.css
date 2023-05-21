@@ -25,6 +25,7 @@ a {
 :root {
   --gray: #9a9a9a;
   --red: #f90000;
+  --moreBtn : #555 ; 
 }
 
 /* utility classes */
@@ -39,7 +40,9 @@ a {
 .red {
   color: var(--red);
 }
-
+.lh {
+  line-height: 2;
+}
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   width: 50%;

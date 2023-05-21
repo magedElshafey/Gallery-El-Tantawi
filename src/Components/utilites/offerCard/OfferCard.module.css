@@ -1,0 +1,23 @@
+.mainCard {
+  /* width: 320px; */
+  width: 32.5%;
+  height: 350px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+@media screen and (max-width : 767px) {
+  .mainCard {
+    width: 100%;
+  }
+}
+.mainImg {
+  width: 100%;
+  margin: auto;
+  /* margin: 20px auto; */
+  /* height: 350px; */
+  object-fit: cover;
+}

@@ -9,7 +9,12 @@ const GroupCard = ({ data, title, path }) => {
       <div className="row">
         {data.map((item, index) => (
           <div key={index} className="col-6">
-            <img alt="product/img" src={item.img} className={style.mainImg} />
+            <img
+              loading="lazy"
+              alt="product/img"
+              src={item.img}
+              className={style.mainImg}
+            />
             <Link to={`/product/${item.id}`} className="text-black">
               <p className="fw-bold fs-6 text-center">{item.name}</p>
             </Link>

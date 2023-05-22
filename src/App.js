@@ -25,7 +25,7 @@ const App = () => {
     <div>
       <Router>
         <ScrollToTopAfterChangePage />
-        <Headers />
+
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

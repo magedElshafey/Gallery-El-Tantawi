@@ -27,7 +27,7 @@ const ProductSlider = ({ title, data, path }) => {
         slidesPerView: 2.4,
       },
       900: {
-        slidesPerView: 3.5,
+        slidesPerView: 3,
       },
       1024: {
         slidesPerView: 5.5,
@@ -39,7 +39,7 @@ const ProductSlider = ({ title, data, path }) => {
     },
   };
   return (
-    <div className="py-5 container">
+    <div className="py-3 container">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <p className="fw-bold fs-4">{title}</p>
         <MoreBtn path={path} />
@@ -51,12 +51,13 @@ const ProductSlider = ({ title, data, path }) => {
           {...swiperOptions}
         >
           {data.map((item, index) => (
-            <SwiperSlide key={index} className={`${style.mainContainer}`}>
+            <SwiperSlide key={index} className={`p-2 ${style.mainContainer}`}>
               <Link
                 className="p-0 m-0 w-100 d-flex justify-content-center position-relative"
                 to={`/best/${item.id}`}
               >
                 <img
+                  loading="lazy"
                   alt="product/img"
                   src={item.img}
                   className={`m-3 ${style.mainImg}`}

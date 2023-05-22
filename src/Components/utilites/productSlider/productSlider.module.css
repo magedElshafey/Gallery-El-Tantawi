@@ -1,9 +1,12 @@
 .mainContainer {
     background-color: white;
+    height: 550px;
+    
 }
 .mainImg {
-    height: 250px;
-    width: 80%;
+   object-fit: cover;
+    width: 100%;
+    height: 50%;
   
 }
 .bestPrice {

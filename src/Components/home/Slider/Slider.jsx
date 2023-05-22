@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 const Slider = () => {
   const swiperOptions = {
     loop: true,
-    centeredSlides: false,
-    spaceBetween: 5,
+    centeredSlides: true,
+    spaceBetween: 0,
     navigation: true,
     autoplay: {
       delay: 5000,
@@ -29,13 +29,13 @@ const Slider = () => {
         slidesPerView: 1,
       },
       1024: {
-        slidesPerView: 1.2,
+        slidesPerView: 1,
       },
     },
   };
   return (
-    <div className="container">
-      <div className="row">
+    <div>
+      <div className="row justify-content-center">
         <Swiper
           className="mySwiper col-12"
           modules={[Autoplay, Navigation, Pagination]}
@@ -45,6 +45,7 @@ const Slider = () => {
             <SwiperSlide key={index} className={`py-3 w-100 ${style.slider}`}>
               <Link className={style.imgContainer} path={item.path}>
                 <img
+                  loading="lazy"
                   alt="offers/img"
                   src={item.img}
                   className={style.mainImg}

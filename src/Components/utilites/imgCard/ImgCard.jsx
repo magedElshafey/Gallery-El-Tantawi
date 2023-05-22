@@ -6,7 +6,7 @@ const ImgCard = ({ title, img, path }) => {
     <div className={`p-3 ${style.mainCard}`}>
       <p className="fw-bold mb-2">{title}</p>
       <Link to={path}>
-        <img alt="product/img" src={img} className={style.mainImg} />
+        <img loading="lazy" alt="product/img" src={img} className={style.mainImg} />
       </Link>
     </div>
   );

@@ -124,7 +124,7 @@ const Home = () => {
         </div>
       </div>
       <HeroImg path="/braun" img={braun} />
-      <div className="container my-5">
+      <div className="container mt-5">
         <div className="row">
           <div className="col-12 col-md-6 col-lg-3">
             <GroupCard

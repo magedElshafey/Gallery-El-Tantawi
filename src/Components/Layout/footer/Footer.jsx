@@ -17,7 +17,10 @@ const Footer = () => {
             </p>
             <ul className="d-flex flex-column gap-3 text-center text-sm-end">
               <li>
-                <Link className={`${style.footerLink} text-white-50`} to="/">
+                <Link
+                  className={`${style.footerLink} text-white-50`}
+                  to="/help"
+                >
                   مركز المساعدة
                 </Link>
               </li>
@@ -27,7 +30,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className={`${style.footerLink} text-white-50`} to="/">
+                <Link
+                  className={`${style.footerLink} text-white-50`}
+                  to="/branches"
+                >
                   فروعنا
                 </Link>
               </li>

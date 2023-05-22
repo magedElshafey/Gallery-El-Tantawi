@@ -43,6 +43,9 @@ a {
 .lh {
   line-height: 2;
 }
+.mt {
+  margin-top: 30vh;
+}
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   width: 50%;

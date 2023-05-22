@@ -114,7 +114,7 @@ const Home = () => {
         </div>
       </div>
       <HeroImg path="/braun" img={braun} />
-      <div className="row py-3">
+      <div className="row pt-3">
         <div className="col-12 col-md-6 col-lg-3">
           <GroupCard
             title="أجهزة عناية رائعة سهلة الاستخدام"

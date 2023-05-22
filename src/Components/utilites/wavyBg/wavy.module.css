@@ -1,0 +1,50 @@
+.wrapper {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 30vh;
+	top: 0;
+	margin: auto;
+}
+.banner {
+	position: absolute;
+	z-index: 99;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	text-align: center;
+}
+.box {
+    background-image: url('https://i.postimg.cc/vHXWB9DN/1.png');
+    position: absolute;
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	bottom: -1px;
+	background: linear-gradient(to bottom , #f92a0b 60%, #fb9107);
+	z-index: 5;
+}
+.singleBox {
+    background-image: url('https://i.postimg.cc/vHXWB9DN/1.png');
+    position: absolute;
+	left: 0;
+	width: 200%;
+	height: 100%;
+	background-repeat: repeat no-repeat;
+	background-position: 0 bottom;
+	transform-origin: center bottom;
+	background-size: 50% 80px;
+	animation: animate 18s linear infinite;
+}
+@keyframes animate {
+	0% {
+		transform: translateX(0) translateZ(0) scaleY(1);
+	}
+	50% {
+		transform: translateX(-25%) translateZ(0) scaleY(0.55)
+	}
+	100% {
+		transform: translateX(-50%) translateZ(0) scaleY(1)
+	}
+}

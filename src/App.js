@@ -10,6 +10,8 @@ import Headers from "./Components/Layout/Headers/Headers";
 import Footer from "./Components/Layout/footer/Footer";
 import Branches from "./Pages/Branches";
 import Help from "./Pages/Help";
+import HelpDetails from "./Pages/HelpDetails";
+import Contact from "./Pages/Contact";
 const App = () => {
   // handle scroll to top when page change
   function ScrollToTopAfterChangePage() {
@@ -35,7 +37,13 @@ const App = () => {
           <Route path="/branches" element={<Branches />} />
         </Routes>
         <Routes>
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Routes>
           <Route path="/help" element={<Help />} />
+        </Routes>
+        <Routes>
+          <Route path="/help/:details" element={<HelpDetails />} />
         </Routes>
         <Footer />
       </Router>

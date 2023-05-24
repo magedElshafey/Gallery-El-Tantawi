@@ -1,0 +1,28 @@
+.mainForm {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.inp , .text {
+    padding: 7px 15px;
+    width: 100%;
+    border: 2px solid #eee;
+  
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.inp {
+      height: 50px;
+}
+.text {
+    height: 150px;
+}
+.inp:focus , .text:focus {
+    outline: 1px solid var(--red);
+}

@@ -16,6 +16,7 @@ body {
   text-transform: capitalize;
   overflow-x: hidden !important;
   font-family: 'Cairo' !important;
+ 
 }
 
 a {
@@ -67,6 +68,14 @@ a {
   justify-content: center;
   flex-direction: row-reverse;
 }
-.homeContainer {
+/* .homeContainer {
   background-color: #f1f1f1;
+} */
+
+.main {
+  min-height: calc(100vh - 530px) !important;
+}
+.label {
+  font-weight: bold;
+  color: var(--gray);
 }

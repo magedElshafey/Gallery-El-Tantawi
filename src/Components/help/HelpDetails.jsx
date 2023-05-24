@@ -12,7 +12,10 @@ const HelpDetails = () => {
             className={`d-flex  align-items-center gap-3 fw-bold fs-5 py-3 ${style.titleContainer}`}
           >
             <ImBook size={30} />
-            <Link to="/" className={`text-black ${style.helpLink}`}>
+            <Link
+              to={`/help/${item.title}`}
+              className={`text-black ${style.helpLink}`}
+            >
               {item.title}
             </Link>
           </div>
@@ -29,10 +32,7 @@ const HelpDetails = () => {
               </div>
             ))}
             {item.subTitle.length > 3 && (
-              <Link
-                className="red fs-6"
-                to="/"
-              >
+              <Link className="red fs-6" to={`/help/${item.title}`}>
                 مشاهدة المزيد ...
               </Link>
             )}

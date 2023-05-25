@@ -1,11 +1,13 @@
 .mainContainer {
     background-color: white;
     height: 550px;
+    border: 1px solid #f1f1f1;
     
 }
 .mainImg {
    object-fit: cover;
-    width: 100%;
+    width: 80%;
+    margin: auto !important;
     height: 50%;
   
 }

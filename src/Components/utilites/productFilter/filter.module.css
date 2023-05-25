@@ -1,0 +1,10 @@
+.filterContainer {
+    position: sticky;
+    width: 100%;
+    background-color: #f1f1f1;
+    top: 25px;
+    right: 0;
+}
+.icon {
+    cursor: pointer;
+}

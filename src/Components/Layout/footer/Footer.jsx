@@ -38,7 +38,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className={`${style.footerLink} text-white-50`} to="/">
+                <Link
+                  className={`${style.footerLink} text-white-50`}
+                  to="/offers"
+                >
                   عروض الطنطاوي
                 </Link>
               </li>

@@ -12,6 +12,7 @@ import Branches from "./Pages/Branches";
 import Help from "./Pages/Help";
 import HelpDetails from "./Pages/HelpDetails";
 import Contact from "./Pages/Contact";
+import AllOffers from "./Pages/AllOffers";
 const App = () => {
   // handle scroll to top when page change
   function ScrollToTopAfterChangePage() {
@@ -29,9 +30,11 @@ const App = () => {
     <div>
       <Router>
         <ScrollToTopAfterChangePage />
-
         <Routes>
           <Route path="/" element={<Home />} />
+        </Routes>
+        <Routes>
+          <Route path="/offers" element={<AllOffers />} />
         </Routes>
         <Routes>
           <Route path="/branches" element={<Branches />} />

@@ -40,7 +40,12 @@ const Home = () => {
           />
         </div>
       </div>
-      <ProductSlider title="الأكثر مبيعا" data={bestSallers} path="/best" />
+      <ProductSlider
+        title="الأكثر مبيعا"
+        data={bestSallers}
+        path="/best"
+        isSlider={true}
+      />
       <HeroImg path="/tv" img={heroTv} />
       <div className="row py-3 ">
         <div className="col-12  col-md-6 mb-3 mb-lg-0 col-lg-3">
@@ -67,7 +72,8 @@ const Home = () => {
       <ProductSlider
         title="العروض اليومية"
         data={bestSallers}
-        path="/dailyoffers"
+        path="/offers"
+        isSlider={true}
       />
       <HeroImg path="/rooms" img={heroRom} />
       <HeroCard path="/rooms" title="غرف مريحة يصعب عليك تركها" data={rooms} />
@@ -90,7 +96,12 @@ const Home = () => {
         </div>
       </div>
       <HeroCard path="/mafrosh" title="مفروشات لبيت جميل" data={mafrosh} />
-      <ProductSlider title="وصل حديثا .." data={bestSallers} path="/new" />
+      <ProductSlider
+        isSlider={true}
+        title="وصل حديثا .."
+        data={bestSallers}
+        path="/new"
+      />
       <div className="row py-3">
         <div className="col-12 col-md-6 col-lg-3">
           <ImgCard path="/bed" img={bed} title="لبيت أكثر راحة" />

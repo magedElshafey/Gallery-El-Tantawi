@@ -9,7 +9,11 @@ const OfferByCategory = () => {
   const data = allOffers.categories.filter(
     (item) => item.enTitle === params.category
   );
-  const products = price ? data.filter((item) => item.price === price) : data;
+  console.log("hello from data", data);
+  const products = price
+    ? data[0].products.filter((item) => item.price === price)
+    : data[0].products;
+  console.log("hello from products", products);
   const sectionRef = useRef(null);
   const handleFilterClick = () => {
     if (sectionRef.current) {
@@ -17,9 +21,9 @@ const OfferByCategory = () => {
       window.scrollTo({ top: sectionTop, behavior: "smooth" });
     }
   };
-  // pagination
+  //pagination
   const [pageNumber, setPageNumber] = useState(0);
-  const usersPerPage = 30;
+  const usersPerPage = 12;
   const pagesVisited = pageNumber * usersPerPage;
   const pageCount = products.length / usersPerPage;
   const changePage = ({ selected }) => {

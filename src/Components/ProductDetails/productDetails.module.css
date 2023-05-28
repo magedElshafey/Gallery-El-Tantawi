@@ -1,0 +1,47 @@
+/* start static */
+.staticContainer {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+/* end static */
+
+/* start img section */
+.mainImgContainer {
+    border: 1px solid #ccc;
+    padding: 15px 7px;
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.mainImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subImgContainer {
+    border: 1px solid #ccc;
+    padding: 7px;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.subImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+/* end img section */

@@ -71,7 +71,7 @@ const ProductSlider = ({
                 >
                   <Link
                     className={` d-flex justify-content-center position-relative ${style.linkContainer}`}
-                    to={`/best/${item.id}`}
+                    to={`/products/${item.id}`}
                   >
                     <img
                       loading="lazy"

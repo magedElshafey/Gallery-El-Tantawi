@@ -6,7 +6,7 @@ const FirsrHeader = () => {
     <div className={`py-2 ${style.mainContainer}`}>
       <div className="container">
         <div className="d-flex align-items-center gap-4">
-          <Link to="/reg" className={style.headerLink}>
+          <Link to="/login" className={style.headerLink}>
             تسجيل الدخول
           </Link>
           <Link to="/help" className={style.headerLink}>

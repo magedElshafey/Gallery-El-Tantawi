@@ -18,6 +18,7 @@ import SecondHeader from "./Components/Layout/secondHeader/SecondHeader";
 import ThirdHeader from "./Components/Layout/thirdHeader/ThirdHeader";
 import OfferByCategory from "./Pages/OfferByCategory";
 import Regster from "./Pages/Regster";
+import Login from "./Pages/Login";
 const App = () => {
   // handle scroll to top when page change
   function ScrollToTopAfterChangePage() {
@@ -61,6 +62,9 @@ const App = () => {
         </Routes>
         <Routes>
           <Route path="/create" element={<Regster />} />
+        </Routes>
+        <Routes>
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </Router>

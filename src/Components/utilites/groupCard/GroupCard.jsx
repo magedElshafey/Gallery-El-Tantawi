@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import MoreBtn from "../MoreBtn/MoreBtn";
 const GroupCard = ({ data, title, path }) => {
   return (
-    <div className={`p-3 ${style.mainCard}`}>
+    <div className={`p-3  ${style.mainCard}`}>
       <p className="fw-bold mb-3">{title}</p>
       <div className="row">
         {data.map((item, index) => (
@@ -21,7 +21,9 @@ const GroupCard = ({ data, title, path }) => {
           </div>
         ))}
       </div>
-      <MoreBtn path={path} />
+      <div className={style.moreContainer}>
+        <MoreBtn path={path} />
+      </div>
     </div>
   );
 };

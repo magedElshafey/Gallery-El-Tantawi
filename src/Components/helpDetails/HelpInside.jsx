@@ -3,7 +3,6 @@ import style from "./helpinside.module.css";
 import { Link } from "react-router-dom";
 import { BsFillBookmarkFill } from "react-icons/bs";
 const HelpInside = ({ data }) => {
-  console.log("hello from inside content ", data);
   return (
     <div className=" pb-5 pt-3">
       {data.map((item, index) => (

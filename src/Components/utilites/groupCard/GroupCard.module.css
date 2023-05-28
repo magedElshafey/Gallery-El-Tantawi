@@ -1,18 +1,29 @@
 .mainCard {
-  /* height: 450px; */
+height: 400px; 
   background-color: white;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
+  position: relative;
   -o-border-radius: 5px;
 }
 
 .mainImg {
   width: 100%; 
-  /* height: 100px; */
-  object-fit: cover;
+height: 80px; 
+  object-fit: contain;
 }
 .name {
   width: fit-content !important;
+}
+.moreContainer {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }

@@ -8,7 +8,7 @@ const CatCard = ({ data, title }) => {
       <div
         className={` py-4 ${style.mainCard} d-flex justify-content-center  align-items-center gap-3 flex-wrap`}
       >
-        {data.map((item, index) => (
+        {data.categories.map((item, index) => (
           <Link
             key={index}
             to={item.path}

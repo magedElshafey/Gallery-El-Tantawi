@@ -24,15 +24,15 @@ import bed from "../assets/bed.jpg";
 import braun from "../assets/Braun-Desktop-AR_2.jpg";
 const Home = () => {
   return (
-    <div className="homeContainer container">
+    <div className="container">
       <Slider />
       <div className="row  py-3">
-        <div className="col-12 col-md-9">
+        <div className="col-12 col-md-8 mb-4 mb-md-0">
           <div className="row">
             <OfferCard data={offerImg} />
           </div>
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-4">
           <GroupCard
             title="مطبخ مثالي ؟ لا يوجد افضل من ذلك"
             data={kitchenOffers}
@@ -159,7 +159,16 @@ export default Home;
     
      
       
-    
+    <div className="row  py-3">
+        <div className="col-12 col-md-9">
+          <div className="row">
+          
+          </div>
+        </div>
+        <div className="col-12 col-md-3">
+          
+        </div>
+      </div>
      
      
       

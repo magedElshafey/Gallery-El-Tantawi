@@ -7,7 +7,7 @@ const OfferCard = ({ data }) => {
       {data.map((item, index) => (
         <div
           key={index}
-          className={`${style.mainCard} col-12 col-md-4  mb-3 mb-md-0`}
+          className={`${style.mainCard} col-12 col-md-4  mb-5 mb-md-0`}
         >
           <p className="fw-bold mb-3 p-2">{item.title}</p>
           <Link path={item.path}>
@@ -15,7 +15,7 @@ const OfferCard = ({ data }) => {
               loading="lazy"
               alt="offer/img"
               src={item.img}
-              className={style.mainImg}
+              className={`${style.mainImg} img-fluid`}
             />
           </Link>
         </div>

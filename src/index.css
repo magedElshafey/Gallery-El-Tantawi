@@ -15,6 +15,7 @@ html {
 body {
   text-transform: capitalize;
   overflow-x: hidden !important;
+  background-color: #f0f0f0 !important;
   font-family: 'Cairo' !important;
  
 }

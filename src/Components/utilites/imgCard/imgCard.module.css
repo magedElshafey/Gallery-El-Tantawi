@@ -1,10 +1,10 @@
 .mainCard {
     background-color: white;
-    height: 450px;
+    height: 400px;
 }
 .mainImg {
     width: 100%;
     margin: auto !important;
-    height: 350px;
+    height: 90%;
     object-fit: cover;
 }

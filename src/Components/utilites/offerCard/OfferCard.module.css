@@ -1,6 +1,7 @@
 .mainCard {
   background-color: white;
   border-radius: 5px;
+  height: 400px; 
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -9,7 +10,8 @@
 
 .mainImg {
   width: 100%;
-  margin: auto;
-  
+ height: 350px;
+ height: 90%;
+  /* height: 300px; */
   object-fit: cover;
 }

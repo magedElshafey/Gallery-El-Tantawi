@@ -9,5 +9,5 @@
     -o-transition: 0.3s;
 }
 .mainContainer:hover {
-    background-color: #eee !important;
+    background-color: white !important;
 }

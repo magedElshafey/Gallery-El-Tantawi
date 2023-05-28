@@ -10,7 +10,7 @@ const HelpDetails = () => {
   return (
     <div>
       <WavyBg title={data[0].title} />
-      <div className="container main mt bg-light">
+      <div className="container main mt">
         <HelpInside data={data[0].insideContent} />
       </div>
     </div>

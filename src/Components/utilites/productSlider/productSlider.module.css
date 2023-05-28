@@ -1,14 +1,19 @@
 .mainContainer {
     background-color: white;
-    height: 550px;
+    height: 360px;
     border: 1px solid #f1f1f1;
+   position: relative !important ; 
+   
     
 }
+.linkContainer {
+    height: 30%;
+}
 .mainImg {
-   object-fit: cover;
+   object-fit: contain;
     width: 80%;
     margin: auto !important;
-    height: 50%;
+    height: 100% !important;
   
 }
 .bestPrice {
@@ -25,19 +30,24 @@
     -o-border-radius: 5px;
 }
 .free {
-    color: white;
-    width: fit-content;
-    background-color: #4caf50 !important;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   color: white;
+   text-align: center;
+   position: absolute;
+   left: 50%;
+  bottom: 0;
+   transform: translateX(-50%);
+   background-color: #4caf50 !important;
+   font-weight: bold;
    padding: 7px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
 }
 .limited {
     color: #ff6722;

@@ -21,7 +21,7 @@ const ProductSlider = ({
   const swiperOptions = {
     loop: true,
     centeredSlides: false,
-    spaceBetween: 8,
+    spaceBetween: 4,
     navigation: true,
     autoplay: {
       delay: 10000,
@@ -32,16 +32,17 @@ const ProductSlider = ({
     },
     breakpoints: {
       500: {
-        slidesPerView: 1.8,
+        slidesPerView: 1.7,
       },
       768: {
-        slidesPerView: 2.4,
+        slidesPerView: 2,
       },
       900: {
         slidesPerView: 3,
       },
-      1024: {
-        slidesPerView: 5.5,
+
+      1200: {
+        slidesPerView: 5,
       },
     },
     scrollbar: {
@@ -66,17 +67,17 @@ const ProductSlider = ({
               {data.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className={`p-2 ${style.mainContainer}`}
+                  className={`p-2  ${style.mainContainer}`}
                 >
                   <Link
-                    className="p-0 m-0 w-100 d-flex justify-content-center position-relative"
+                    className={` d-flex justify-content-center position-relative ${style.linkContainer}`}
                     to={`/best/${item.id}`}
                   >
                     <img
                       loading="lazy"
                       alt="product/img"
                       src={item.img}
-                      className={`m-3 ${style.mainImg}`}
+                      className={` ${style.mainImg}`}
                     />
                     {item.offer ? (
                       <p className={style.bestPrice}>أفضل سعر</p>
@@ -85,37 +86,37 @@ const ProductSlider = ({
                     )}
                   </Link>
                   {item.limited ? (
-                    <p className={`px-2 mb-2 ${style.limited}`}>
+                    <p className={`px-2 my-2 ${style.limited}`}>
                       العرض مستمر لفترة محدودة
                     </p>
                   ) : (
                     ""
                   )}
-                  <p className="lh px-2 mb-0">{item.title}</p>
+                  <p className="px-2 my-2">{item.title}</p>
                   {item.colors.map((item, index) => (
                     <p
                       key={index}
-                      className="d-inline-block text-black-50 px-2"
+                      className="d-inline-block m-0 py-0 text-black-50 px-2"
                     >
                       {item}{" "}
                     </p>
                   ))}
                   {item.offer ? (
-                    <div className="d-flex justify-content-between align-items-center px-2">
+                    <div className="d-flex justify-content-between align-items-center px-2 mb-3">
                       <p className="fw-bold red fs-6 m-0 ">
                         {item.originalPrice - item.offer} جنيه
                       </p>
-                      <del className="fw-bold fs-6">
+                      <del className="fw-bold fs-6 m-0">
                         {item.originalPrice} جنيه
                       </del>
                     </div>
                   ) : (
-                    <p className="fw-bold red fs-6 px-2">
+                    <p className="fw-bold red fs-6 px-2 my-2">
                       {item.originalPrice} جنيه
                     </p>
                   )}
                   {item.freeShipping && (
-                    <p className={`mx-2 my-4 ${style.free}`}>شحن مجاني</p>
+                    <p className={`  ${style.free}`}>شحن مجاني</p>
                   )}
                 </SwiperSlide>
               ))}
@@ -129,11 +130,11 @@ const ProductSlider = ({
               .slice(pagesVisited, pagesVisited + usersPerPage)
               .map((item, index) => (
                 <div
-                  className={`col-12 p-2 col-sm-6 col-md-4 col-lg-3 ${style.mainContainer}`}
+                  className={`col-12 p-2 col-sm-6 col-md-4 mb-3 col-lg-3 ${style.mainContainer}`}
                   key={index}
                 >
                   <Link
-                    className="p-0 m-0 w-100 d-flex justify-content-center position-relative"
+                    className={` d-flex justify-content-center position-relative ${style.linkContainer}`}
                     to={`/products/${item.id}`}
                   >
                     <img
@@ -149,23 +150,23 @@ const ProductSlider = ({
                     )}
                   </Link>
                   {item.limited ? (
-                    <p className={`px-2 mb-2 ${style.limited}`}>
+                    <p className={`px-2 my-2 ${style.limited}`}>
                       العرض مستمر لفترة محدودة
                     </p>
                   ) : (
                     ""
                   )}
-                  <p className="lh px-2 mb-0">{item.title}</p>
+                  <p className="lh px-2 my-2">{item.title}</p>
                   {item.colors.map((item, index) => (
                     <p
                       key={index}
-                      className="d-inline-block text-black-50 px-2"
+                      className="d-inline-block py-0 m-0 text-black-50 px-2"
                     >
                       {item}{" "}
                     </p>
                   ))}
                   {item.offer ? (
-                    <div className="d-flex justify-content-between align-items-center px-2">
+                    <div className="d-flex py-2 justify-content-between align-items-center px-2">
                       <p className="fw-bold red fs-6 m-0 ">
                         {item.originalPrice - item.offer} جنيه
                       </p>

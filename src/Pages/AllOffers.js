@@ -1,13 +1,13 @@
 import React, { useState, useRef } from "react";
-import { allOffers, allProducts } from "../fakers/data";
+import { allOffers } from "../fakers/data";
 import CatCard from "../Components/utilites/cateogryCard/CatCard";
 import ProductFilter from "../Components/utilites/productFilter/ProductFilter";
 import ProductSlider from "../Components/utilites/productSlider/ProductSlider";
 const AllOffers = () => {
   const [price, setPrice] = useState("");
   const products = price
-    ? allProducts.filter((item) => item.price === price)
-    : allProducts;
+    ? allOffers.allProducts.filter((item) => item.price === price)
+    : allOffers.allProducts;
   const sectionRef = useRef(null);
   const handleFilterClick = () => {
     if (sectionRef.current) {
@@ -27,13 +27,13 @@ const AllOffers = () => {
     <div className="container-fluid py-5">
       <CatCard title="عروض الطنطاوي" data={allOffers} />
       <div className="row pt-5 mt-5">
-        <div className="col-3">
+        <div className="col-5 col-md-3">
           <ProductFilter
             handleFilterClick={handleFilterClick}
             setPrice={setPrice}
           />
         </div>
-        <div className="col-12 col-md-9">
+        <div className="col-7 col-md-9">
           <ProductSlider
             data={products}
             isSlider={false}

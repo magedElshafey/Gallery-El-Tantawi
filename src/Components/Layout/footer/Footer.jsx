@@ -8,7 +8,7 @@ import { SiVodafone } from "react-icons/si";
 import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 const Footer = () => {
   return (
-    <div className={style.mainContainer}>
+    <div className={`mt-4 ${style.mainContainer}`}>
       <div className="container py-3">
         <div className="row ">
           <div className="col-12 col-sm-6 col-md-4 col-lg-3">

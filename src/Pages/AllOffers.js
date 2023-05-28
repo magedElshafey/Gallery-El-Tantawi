@@ -17,35 +17,40 @@ const AllOffers = () => {
   };
   // pagination
   const [pageNumber, setPageNumber] = useState(0);
-  const usersPerPage = 28;
+  const usersPerPage = 30;
   const pagesVisited = pageNumber * usersPerPage;
   const pageCount = products.length / usersPerPage;
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
   return (
-    <div className="container-fluid py-5">
-      <CatCard title="عروض الطنطاوي" data={allOffers} />
-      <div className="row pt-5 mt-5">
-        <div className="col-5 col-md-3">
-          <ProductFilter
-            handleFilterClick={handleFilterClick}
-            setPrice={setPrice}
-          />
-        </div>
-        <div className="col-7 col-md-9">
-          <ProductSlider
-            data={products}
-            isSlider={false}
-            path={null}
-            title={null}
-            sectionRef={sectionRef}
-            usersPerPage={usersPerPage}
-            pagesVisited={pagesVisited}
-            pageCount={pageCount}
-            changePage={changePage}
-            onClick={handleFilterClick}
-          />
+    <div className="py-4">
+      <div className="container-fluid">
+        <CatCard title="عروض الطنطاوي" data={allOffers} />
+      </div>
+
+      <div className="container-fluid py-5">
+        <div className="row">
+          <div className="col-12 col-md-3">
+            <ProductFilter
+              handleFilterClick={handleFilterClick}
+              setPrice={setPrice}
+            />
+          </div>
+          <div className="col-12 col-md-9">
+            <ProductSlider
+              data={products}
+              isSlider={false}
+              path={null}
+              title={null}
+              sectionRef={sectionRef}
+              usersPerPage={usersPerPage}
+              pagesVisited={pagesVisited}
+              pageCount={pageCount}
+              changePage={changePage}
+              onClick={handleFilterClick}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -53,3 +58,11 @@ const AllOffers = () => {
 };
 
 export default AllOffers;
+/*
+  <div >
+    
+      <div className="row pt-5 mt-5">
+       
+      </div>
+    </div>
+*/

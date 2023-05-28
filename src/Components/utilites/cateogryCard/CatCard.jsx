@@ -11,7 +11,7 @@ const CatCard = ({ data, title }) => {
         {data.categories.map((item, index) => (
           <Link
             key={index}
-            to={item.path}
+            to={`/offers/${item.enTitle}`}
             className={`${style.cardContainer} d-flex flex-column align-items-center justify-content-center gap-3 p-2 `}
           >
             <img alt="category/img" src={item.img} className={style.mainImg} />

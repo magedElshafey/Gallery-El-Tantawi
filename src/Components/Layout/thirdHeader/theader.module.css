@@ -1,0 +1,17 @@
+.mainContainer {
+    width: 100vw;
+    height: 40px;
+    background-color: #514b4b;
+}
+.close {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    color: white;
+    padding: 4px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

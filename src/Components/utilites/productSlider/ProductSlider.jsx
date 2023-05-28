@@ -130,7 +130,7 @@ const ProductSlider = ({
               .slice(pagesVisited, pagesVisited + usersPerPage)
               .map((item, index) => (
                 <div
-                  className={`col-12 p-2 col-sm-6 col-md-4 mb-3 col-lg-3 ${style.mainContainer}`}
+                  className={`col-12 p-2 col-md-6 col-lg-4 mb-3  ${style.mainContainer}`}
                   key={index}
                 >
                   <Link
@@ -156,7 +156,7 @@ const ProductSlider = ({
                   ) : (
                     ""
                   )}
-                  <p className="lh px-2 my-2">{item.title}</p>
+                  <p className="px-2 my-2">{item.title}</p>
                   {item.colors.map((item, index) => (
                     <p
                       key={index}

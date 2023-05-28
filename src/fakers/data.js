@@ -58,7 +58,7 @@ import room10 from "../assets/room-10.png";
 import room11 from "../assets/room-11.png";
 import room12 from "../assets/room-12.png";
 // mafroshat
-import m0 from "../assets/file_190.png";
+
 import m1 from "../assets/file_191.png";
 import m2 from "../assets/file_192.png";
 import m3 from "../assets/file_193.png";
@@ -189,6 +189,227 @@ import prod111 from "../assets/kitchen/pro-08.jpg";
 import prod112 from "../assets/kitchen/pro-09.jpg";
 import prod113 from "../assets/kitchen/pro-10.jpg";
 import prod114 from "../assets/kitchen/pro-11.jpg";
+export const categories = [
+  {
+    id: 1,
+    title: "الأدوات المنزلية",
+    path: "/home",
+    subCategories: [
+      {
+        id: 1,
+        title: "أدوات التقديم",
+        path: "/home/serve",
+        subCategories: [
+          {
+            title: "الأكروبال",
+            path: "/home/serve/acrobal",
+          },
+          {
+            title: "الأكروبايكس",
+            path: "/home/serve/acrobics",
+          },
+          {
+            title: "السفرة الصيني",
+            path: "/home/serve/sofra",
+          },
+          {
+            title: "العشاء",
+            path: "/home/serve/dinner",
+          },
+          {
+            title: "الميلامين",
+            path: "/home/serve/milamen",
+          },
+          {
+            title: "سكاكين",
+            path: "/home/serve/knifes",
+          },
+          {
+            title: "شاي و جاتوه",
+            path: "/home/serve/tea",
+          },
+          {
+            title: "شيالات الكحك",
+            path: "/home/serve/shayalat",
+          },
+          {
+            title: "صواني التقديم",
+            path: "/home/serve/serve",
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "أدوات المطبخ",
+        path: "/kitchen",
+        subCategories: [
+          {
+            title: "أطقم تسالي",
+            path: "/home/tsali",
+          },
+          {
+            title: "أطقم توابل",
+            path: "/home/twabel",
+          },
+          {
+            title: "أطقم قهوة",
+            path: "/home/coffe",
+          },
+          {
+            title: "أطقم كاكاو",
+            path: "/home/cacw",
+          },
+          {
+            title: "رفايع البلاستيك و الحمام",
+            path: "/home/rafye",
+          },
+          {
+            title: "رفايع المطبخ",
+            path: "/home/kitchenrfaye",
+          },
+          {
+            title: "الحلل",
+            path: "/home/helal",
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: "زجاج المطبخ ",
+        path: "/home/glasseskitchen",
+        subCategories: [],
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "المفروشات",
+    path: "/mafrosh",
+    subCategories: [
+      {
+        id: 1,
+        title: "بطاطين",
+        subCategories: [
+          {
+            id: 1,
+            title: "بطاطين كبيرة",
+          },
+          {
+            id: 2,
+            title: "بطاطين صغيرة",
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "لحاف",
+        subCategories: [
+          {
+            id: 1,
+            title: "لحاف كبير",
+          },
+          {
+            id: 2,
+            title: "لحاف صغير",
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: "دفايات",
+        subCategories: [
+          {
+            id: 1,
+            title: "دفاية كبير",
+          },
+          {
+            id: 2,
+            title: "دفاية صغير",
+          },
+        ],
+      },
+      {
+        id: 4,
+        title: "كوفرتة",
+        subCategories: [
+          {
+            id: 1,
+            title: "كوفرتة كبير",
+          },
+          {
+            id: 2,
+            title: "كوفرتة صغير",
+          },
+        ],
+      },
+      {
+        id: 5,
+        title: "ملايات سرير",
+        subCategories: [
+          {
+            id: 1,
+            title: "ملابة كبير",
+          },
+          {
+            id: 2,
+            title: "ملابة صغير",
+          },
+        ],
+      },
+      {
+        id: 6,
+        title: "فوط و مناشف",
+        subCategories: [],
+      },
+      {
+        id: 7,
+        title: "مفارش السرير و السفرة",
+        subCategories: [],
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "المراتب",
+    subCategories: [
+      {
+        id: 1,
+        title: "مخدات و خدديات",
+        subCategories: [],
+      },
+      {
+        id: 2,
+        title: "كفرات المراتب",
+        subCategories: [],
+      },
+      {
+        id: 3,
+        title: "مراتب",
+        subCategories: [],
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "السجاد",
+    subCategories: [],
+  },
+  {
+    id: 5,
+    title: "النجف",
+    subCategories: [],
+  },
+  {
+    id: 6,
+    title: "رفايع الأجهزة",
+    subCategories: [],
+  },
+  {
+    id: 7,
+    title: "الجاليري و النجف",
+    subCategories: [],
+  },
+];
 export const offers = [
   {
     path: "/offers/kitchen",

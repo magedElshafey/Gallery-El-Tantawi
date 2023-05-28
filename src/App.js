@@ -6,13 +6,17 @@ import {
   useLocation,
 } from "react-router-dom";
 import Home from "./Pages/Home";
-import Headers from "./Components/Layout/Headers/Headers";
+
 import Footer from "./Components/Layout/footer/Footer";
 import Branches from "./Pages/Branches";
 import Help from "./Pages/Help";
 import HelpDetails from "./Pages/HelpDetails";
 import Contact from "./Pages/Contact";
 import AllOffers from "./Pages/AllOffers";
+import FirsrHeader from "./Components/Layout/firstHeader/FirsrHeader";
+import SecondHeader from "./Components/Layout/secondHeader/SecondHeader";
+import ThirdHeader from "./Components/Layout/thirdHeader/ThirdHeader";
+import OfferByCategory from "./Pages/OfferByCategory";
 const App = () => {
   // handle scroll to top when page change
   function ScrollToTopAfterChangePage() {
@@ -30,11 +34,17 @@ const App = () => {
     <div>
       <Router>
         <ScrollToTopAfterChangePage />
+        <FirsrHeader />
+        <SecondHeader />
+        <ThirdHeader />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
         <Routes>
           <Route path="/offers" element={<AllOffers />} />
+        </Routes>
+        <Routes>
+          <Route path="/offers/:category" element={<OfferByCategory />} />
         </Routes>
         <Routes>
           <Route path="/branches" element={<Branches />} />

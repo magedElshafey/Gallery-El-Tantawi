@@ -17,6 +17,7 @@ import FirsrHeader from "./Components/Layout/firstHeader/FirsrHeader";
 import SecondHeader from "./Components/Layout/secondHeader/SecondHeader";
 import ThirdHeader from "./Components/Layout/thirdHeader/ThirdHeader";
 import OfferByCategory from "./Pages/OfferByCategory";
+import Regster from "./Pages/Regster";
 const App = () => {
   // handle scroll to top when page change
   function ScrollToTopAfterChangePage() {
@@ -57,6 +58,9 @@ const App = () => {
         </Routes>
         <Routes>
           <Route path="/help/:details" element={<HelpDetails />} />
+        </Routes>
+        <Routes>
+          <Route path="/create" element={<Regster />} />
         </Routes>
         <Footer />
       </Router>

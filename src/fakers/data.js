@@ -478,6 +478,7 @@ export const bestSallers = [
     offer: 320,
     limited: true,
     freeShipping: true,
+    price: "less1000",
   },
   {
     id: 10,
@@ -488,6 +489,7 @@ export const bestSallers = [
     offer: 820,
     limited: true,
     freeShipping: false,
+    price: "less1000",
   },
   {
     id: 11,
@@ -498,6 +500,7 @@ export const bestSallers = [
     offer: 820,
     limited: false,
     freeShipping: true,
+    price: "less1000",
   },
   {
     id: 12,
@@ -508,6 +511,7 @@ export const bestSallers = [
     offer: 0,
     limited: false,
     freeShipping: false,
+    price: "more1000",
   },
   {
     id: 13,
@@ -518,6 +522,7 @@ export const bestSallers = [
     offer: 0,
     limited: true,
     freeShipping: true,
+    price: "more1000",
   },
   {
     id: 14,
@@ -528,6 +533,7 @@ export const bestSallers = [
     offer: 4000,
     limited: true,
     freeShipping: false,
+    price: "more1000",
   },
   {
     id: 15,
@@ -538,6 +544,7 @@ export const bestSallers = [
     offer: 200,
     limited: false,
     freeShipping: true,
+    price: "more10000",
   },
   {
     id: 16,
@@ -548,6 +555,7 @@ export const bestSallers = [
     offer: 0,
     limited: false,
     freeShipping: false,
+    price: "more10000",
   },
   {
     id: 17,
@@ -558,6 +566,7 @@ export const bestSallers = [
     offer: 200,
     limited: true,
     freeShipping: true,
+    price: "more10000",
   },
   {
     id: 18,
@@ -568,6 +577,7 @@ export const bestSallers = [
     offer: 200,
     limited: true,
     freeShipping: true,
+    price: "less1000",
   },
   {
     id: 19,
@@ -578,6 +588,7 @@ export const bestSallers = [
     offer: 200,
     limited: false,
     freeShipping: true,
+    price: "less1000",
   },
 ];
 export const machine = [
@@ -3960,7 +3971,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "more10000"
+          price: "more10000",
         },
         {
           id: 180,
@@ -3972,7 +3983,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "more10000"
+          price: "more10000",
         },
       ],
     },
@@ -3992,7 +4003,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "less1000"
+          price: "less1000",
         },
         {
           id: 171,
@@ -4004,7 +4015,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "less1000"
+          price: "less1000",
         },
         {
           id: 172,
@@ -4016,7 +4027,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "less1000"
+          price: "less1000",
         },
         {
           id: 173,
@@ -4028,7 +4039,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "less1000"
+          price: "less1000",
         },
         {
           id: 174,
@@ -4040,7 +4051,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "less1000"
+          price: "less1000",
         },
         {
           id: 175,
@@ -4052,7 +4063,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "less1000"
+          price: "less1000",
         },
         {
           id: 176,
@@ -4064,7 +4075,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "more10000"
+          price: "more10000",
         },
         {
           id: 177,
@@ -4076,7 +4087,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "more10000"
+          price: "more10000",
         },
         {
           id: 178,
@@ -4088,8 +4099,8 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           bestPrice: false,
-          colors : [] , 
-          price : "more10000"
+          colors: [],
+          price: "more10000",
         },
         {
           id: 179,
@@ -4101,7 +4112,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "more10000"
+          price: "more10000",
         },
         {
           id: 180,
@@ -4113,7 +4124,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "more10000"
+          price: "more10000",
         },
       ],
     },
@@ -4133,7 +4144,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "less10000"
+          price: "less10000",
         },
         {
           id: 171,
@@ -4145,7 +4156,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "less10000"
+          price: "less10000",
         },
         {
           id: 172,
@@ -4157,7 +4168,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "less10000"
+          price: "less10000",
         },
         {
           id: 173,
@@ -4169,7 +4180,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "less10000"
+          price: "less10000",
         },
         {
           id: 174,
@@ -4181,7 +4192,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "more1000"
+          price: "more1000",
         },
         {
           id: 175,
@@ -4193,7 +4204,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "more1000"
+          price: "more1000",
         },
         {
           id: 176,
@@ -4205,7 +4216,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "more1000"
+          price: "more1000",
         },
         {
           id: 177,
@@ -4217,7 +4228,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "more1000"
+          price: "more1000",
         },
         {
           id: 178,
@@ -4229,8 +4240,8 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           bestPrice: false,
-          colors : [] , 
-          price : "more10000" ,
+          colors: [],
+          price: "more10000",
         },
         {
           id: 179,
@@ -4242,7 +4253,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: [],
-          price : "more1000"
+          price: "more1000",
         },
         {
           id: 180,
@@ -4254,7 +4265,7 @@ export const allOffers = {
           originalPrice: 15000,
           offer: 200,
           colors: ["أبيض", "ذهبي"],
-          price : "more1000"
+          price: "more1000",
         },
       ],
     },

@@ -19,6 +19,9 @@ import ThirdHeader from "./Components/Layout/thirdHeader/ThirdHeader";
 import OfferByCategory from "./Pages/OfferByCategory";
 import Regster from "./Pages/Regster";
 import Login from "./Pages/Login";
+import ProductDetails from "./Pages/ProductDetails";
+import BestSaller from "./Pages/BestSaller";
+import News from "./Pages/News";
 const App = () => {
   // handle scroll to top when page change
   function ScrollToTopAfterChangePage() {
@@ -46,7 +49,16 @@ const App = () => {
           <Route path="/offers" element={<AllOffers />} />
         </Routes>
         <Routes>
+          <Route path="/best" element={<BestSaller />} />
+        </Routes>
+        <Routes>
+          <Route path="/new" element={<News />} />
+        </Routes>
+        <Routes>
           <Route path="/offers/:category" element={<OfferByCategory />} />
+        </Routes>
+        <Routes>
+          <Route path="/products/:id" element={<ProductDetails />} />
         </Routes>
         <Routes>
           <Route path="/branches" element={<Branches />} />

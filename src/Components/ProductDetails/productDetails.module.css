@@ -11,6 +11,7 @@
 
 /* start img section */
 .mainImgContainer {
+    cursor: pointer;
     border: 1px solid #ccc;
     padding: 15px 7px;
     width: 100%;
@@ -28,10 +29,11 @@
 }
 
 .subImgContainer {
+    cursor: pointer;
     border: 1px solid #ccc;
     padding: 7px;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -44,4 +46,92 @@
     object-fit: contain;
     cursor: pointer;
 }
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:white;
+  
+}
+.closeIcon {
+    position: relative;
+    top: 10px;
+    right: 10px;
+   
+}
+.modalImg {
+    object-fit: contain;
+    width: 80%;
+    height: 80%;
+}
 /* end img section */
+/* start info section */
+.installmentContainer {
+    border: 1px dashed #ccc;
+}
+.installmentImg {
+    width: 50px;
+    height : 30px ; 
+    object-fit: contain;
+}
+/* end info section */
+/* start add to cart btn */
+.box {
+    border: 1px solid #ccc;
+    padding: 7px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addBtn  {
+    background-color: black;
+    color: white;
+    height: 40px;
+    min-width: 200px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.addBtn , .heart {
+     transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.addBtn:hover  {
+    background-color: var(--red);
+}
+.heart:hover {
+    color: var(--red) !important;
+    transform: scale(1.1) !important;
+    -webkit-transform: scale(1.1) !important;
+    -moz-transform: scale(1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    -o-transform: scale(1.1) !important;
+}
+/* end add to cart btn */
+/* start tabs */
+.tabsContainer , .questionContainer{
+    border-bottom: 1px solid #ccc;
+}
+.tab{
+    transform: 0.3s;
+    -webkit-transform: 0.3s;
+    -moz-transform: 0.3s;
+    -ms-transform: 0.3s;
+    -o-transform: 0.3s;
+}
+.tab:hover:not(.active) , .active{
+    color: black !important ;
+    border-bottom: 2px solid black;
+}
+
+/* end tabs */

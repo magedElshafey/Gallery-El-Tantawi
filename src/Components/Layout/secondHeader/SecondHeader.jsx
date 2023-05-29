@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./sheader.module.css";
 import logo from "../../../assets/logo-ar.png";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
-const SecondHeader = () => {
-  const [openCart, setOpenCart] = useState(false);
+import { useDispatch } from "react-redux";
+import { openCart } from "../../../Redux/cart";
+const SecondHeader = ({ cartItems }) => {
+  const dispatch = useDispatch();
   return (
     <div className={`py-2 ${style.mainContainer}`}>
       <div className="container">
@@ -27,15 +29,15 @@ const SecondHeader = () => {
                 <p className="m-0 p-0">مرحبا بك في جاليري الطنطاوي</p>
                 <div className={`position-relative ${style.cartContainer}`}>
                   <AiOutlineShoppingCart
-                    onClick={() => setOpenCart(true)}
+                    onClick={() => dispatch(openCart())}
                     className={style.cart}
                     size={30}
                   />
                   <span
-                    onClick={() => setOpenCart(true)}
+                    onClick={() => dispatch(openCart())}
                     className={style.length}
                   >
-                    0
+                    {cartItems}
                   </span>
                 </div>
               </div>

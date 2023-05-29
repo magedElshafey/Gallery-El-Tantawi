@@ -6,7 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Home from "./Pages/Home";
-
+import { useSelector } from "react-redux";
 import Footer from "./Components/Layout/footer/Footer";
 import Branches from "./Pages/Branches";
 import Help from "./Pages/Help";
@@ -22,6 +22,7 @@ import Login from "./Pages/Login";
 import ProductDetails from "./Pages/ProductDetails";
 import BestSaller from "./Pages/BestSaller";
 import News from "./Pages/News";
+import CartSidebar from "./Components/cart/CartSidebar";
 const App = () => {
   // handle scroll to top when page change
   function ScrollToTopAfterChangePage() {
@@ -35,13 +36,17 @@ const App = () => {
   useEffect(() => {
     document.getElementsByTagName("body")[0].style.direction = "rtl";
   }, []);
+  // cart details
+  const openCart = useSelector((state) => state.cartSlice.openCart);
+  const cartItems = useSelector((state) => state.cartSlice.cartItems);
   return (
     <div>
       <Router>
         <ScrollToTopAfterChangePage />
         <FirsrHeader />
-        <SecondHeader />
+        <SecondHeader cartItems={cartItems.length} />
         <ThirdHeader />
+        <CartSidebar openCart={openCart} cartItems={cartItems.length} />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

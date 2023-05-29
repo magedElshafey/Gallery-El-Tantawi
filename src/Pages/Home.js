@@ -45,6 +45,7 @@ const Home = () => {
         data={bestSallers}
         path="/best"
         isSlider={true}
+        showReadMoreBtn={true}
       />
       <HeroImg path="/tv" img={heroTv} />
       <div className="row py-3 ">
@@ -74,6 +75,7 @@ const Home = () => {
         data={bestSallers}
         path="/offers"
         isSlider={true}
+        showReadMoreBtn={true}
       />
       <HeroImg path="/rooms" img={heroRom} />
       <HeroCard path="/rooms" title="غرف مريحة يصعب عليك تركها" data={rooms} />
@@ -101,6 +103,7 @@ const Home = () => {
         title="وصل حديثا .."
         data={bestSallers}
         path="/new"
+        showReadMoreBtn={true}
       />
       <div className="row py-3">
         <div className="col-12 col-md-6 col-lg-3">

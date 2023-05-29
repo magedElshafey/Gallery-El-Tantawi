@@ -17,6 +17,7 @@ const ProductSlider = ({
   pageCount,
   changePage,
   onClick,
+  showReadMoreBtn,
 }) => {
   const swiperOptions = {
     loop: true,
@@ -56,7 +57,7 @@ const ProductSlider = ({
         <div>
           <div className="d-flex justify-content-between align-items-center mb-3">
             <p className="fw-bold fs-4">{title}</p>
-            <MoreBtn path={path} />
+            {showReadMoreBtn && <MoreBtn path={path} />}
           </div>
           <div className="row">
             <Swiper

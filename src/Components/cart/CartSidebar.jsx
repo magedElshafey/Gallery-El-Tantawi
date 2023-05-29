@@ -5,7 +5,8 @@ import { closeCart } from "../../Redux/cart";
 import CartItems from "./cartItems/CartItems";
 import EmptyCart from "./emptycart/EmptyCart";
 import Cartcounter from "./cartCounter/Cartcounter";
-const CartSidebar = ({ cartItems, openCart }) => {
+import CartSubTotal from "./subTotal/CartSubTotal";
+const CartSidebar = ({ cartItemsLength, openCart, cartItems }) => {
   const sidebarRef = useRef(null);
   const dispatch = useDispatch();
   const handleClickOutside = (event) => {
@@ -23,14 +24,15 @@ const CartSidebar = ({ cartItems, openCart }) => {
     <>
       <div
         ref={sidebarRef}
-        className={`${style.mainContainer} ${
+        className={`${style.mainContainer} p-3 ${
           openCart ? style.show : style.hide
         }`}
       >
         <div className="mb-5">
-          <Cartcounter />
+          <Cartcounter cartItems={cartItemsLength} />
         </div>
-        {cartItems ? <CartItems /> : <EmptyCart />}
+        {cartItemsLength ? <CartItems cartItems={cartItems} /> : <EmptyCart />}
+        {cartItemsLength && <CartSubTotal items={cartItems} />}
       </div>
       <div
         className={`${style.overlay} ${openCart ? style.show : style.hide} `}

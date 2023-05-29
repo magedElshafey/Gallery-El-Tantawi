@@ -4,7 +4,7 @@ import logo from "../../../assets/logo-ar.png";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { openCart } from "../../../Redux/cart";
-const SecondHeader = ({ cartItems }) => {
+const SecondHeader = ({ cartItemsLength }) => {
   const dispatch = useDispatch();
   return (
     <div className={`py-2 ${style.mainContainer}`}>
@@ -37,7 +37,7 @@ const SecondHeader = ({ cartItems }) => {
                     onClick={() => dispatch(openCart())}
                     className={style.length}
                   >
-                    {cartItems}
+                    {cartItemsLength}
                   </span>
                 </div>
               </div>

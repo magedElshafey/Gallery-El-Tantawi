@@ -1,7 +1,10 @@
 import React from "react";
 import style from "../productDetails.module.css";
 import { AiOutlinePlus, AiOutlineMinus, AiOutlineHeart } from "react-icons/ai";
-const AddToCart = ({ id }) => {
+import { addToCart } from "../../../Redux/cart";
+import { useDispatch } from "react-redux";
+const AddToCart = ({ payload }) => {
+  const dispatch = useDispatch();
   return (
     <div className="d-flex align-items-center gap-2 gap-md-3">
       <div className="d-flex">
@@ -15,7 +18,12 @@ const AddToCart = ({ id }) => {
           <AiOutlinePlus className="pointer" />
         </div>
       </div>
-      <button className={style.addBtn}>أضف للعربة</button>
+      <button
+        onClick={() => dispatch(addToCart(payload))}
+        className={style.addBtn}
+      >
+        أضف للعربة
+      </button>
       <AiOutlineHeart
         size="30"
         className={`pointer text-black-50 ${style.heart}`}

@@ -38,15 +38,19 @@ const App = () => {
   }, []);
   // cart details
   const openCart = useSelector((state) => state.cartSlice.openCart);
-  const cartItems = useSelector((state) => state.cartSlice.cartItems);
+  const items = useSelector((state) => state.cartSlice.cartItems);
   return (
     <div>
       <Router>
         <ScrollToTopAfterChangePage />
         <FirsrHeader />
-        <SecondHeader cartItems={cartItems.length} />
+        <SecondHeader cartItemsLength={items.length} />
         <ThirdHeader />
-        <CartSidebar openCart={openCart} cartItems={cartItems.length} />
+        <CartSidebar
+          openCart={openCart}
+          cartItemsLength={items.length}
+          cartItems={items}
+        />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

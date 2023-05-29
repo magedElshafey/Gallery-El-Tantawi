@@ -47,7 +47,7 @@ const InfoDetails = ({ data }) => {
       </div>
       {/*add to cart*/}
       <div className="w-100 d-flex justify-content-center mb-4">
-        <AddToCart id={data.id} />
+        <AddToCart payload={data} />
       </div>
       <div className="w-100 d-flex justify-content-center">
         <Sharing link={window.location.href} />

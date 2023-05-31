@@ -8,10 +8,10 @@ const InfoDetails = ({ data }) => {
   return (
     <div>
       {/*title*/}
-      <p className="fs-3 fw-bold mb-4">{data.title}</p>
+      <p className="fs-3 fw-bold mb-3">{data.title}</p>
       {/*price*/}
       {data.offer ? (
-        <div className="d-flex fs-2 gap-5 mb-3">
+        <div className="d-flex fs-4 gap-4 mb-3">
           <p className="fw-bold red mb-0 p-0">
             {data.originalPrice - data.offer} جنيه
           </p>
